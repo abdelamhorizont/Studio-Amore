@@ -1,0 +1,114 @@
+@font-face {
+   font-family: "Galea";
+   src        : url('../assets/fonts/Galea Display Regular.woff');
+}
+
+@font-face {
+   font-family: "Engravers";
+   src        : url('../assets/fonts/Engravers.woff');
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+body {
+   background-color: rgb(213, 201, 191);
+}
+
+p {
+   color: rgb(213, 114, 90);
+}
+
+.grid {
+   display              : grid;
+   grid-template-columns: 1fr 1fr;
+   height               : 92vh;
+
+   display        : flex;
+   justify-content: center;
+   align-items    : center;
+}
+
+.grid-left,
+.images {
+   width: 100%;
+}
+
+.logo-wrapper {
+   display        : flex;
+   justify-content: center;
+   align-items    : center;
+}
+
+#logo {
+   width : 20vw;
+   margin: 5rem 0rem;
+}
+
+.images {
+   z-index: -1;
+
+   img {
+      max-width : 100%;
+      max-height: 100%;
+   }
+}
+
+.mySwiper {
+   max-height: 920vh;
+   width     : 50vw;
+}
+
+.swiper-slide {
+   display        : flex;
+   justify-content: center;
+   align-items    : center;
+}
+
+.swiper-wrapper {
+   align-items: center; /* add this will all relevant prefixes */
+ }
+
+.adress {
+   font-family: 'Galea';
+   font-size  : 3rem;
+   line-height: 2rem;
+   text-align : center;
+}
+
+.links {
+   // display        : flex;
+   // justify-content: space-between;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+
+   margin         : 1rem 2rem;
+
+   font-family: "Engravers";
+
+   div{
+      display: flex;
+      justify-content: center;
+   }
+
+   .insta{
+      display: flex;
+      justify-self: flex-end;
+   }
+
+}
+
+.imprint{
+   width: calc(100vw / 3);
+   flex-wrap: wrap;
+
+   .imprint-title{
+      width: 33vw;
+      margin-bottom: 5vh;
+
+      &:hover {
+         cursor: pointer;
+      }
+   }
+}

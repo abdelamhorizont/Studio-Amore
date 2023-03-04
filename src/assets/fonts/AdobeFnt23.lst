@@ -1,0 +1,85 @@
+%!Adobe-FontList 1.23
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:/Users/denisemacbook/Documents/Design Work/Supersupply/Studio Amore/website/Studio_Amore_web Ordner/Document fonts/AdobeFnt23.lst
+FileLength:1880
+FileModTime:697542210
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:EngraversGothicBT-Regular
+FamilyName:EngraversGothic BT
+StyleName:Regular
+MenuName:EngraversGothic BT
+StyleBits:0
+WeightClass:400
+WidthClass:6
+AngleClass:0
+FullName:Engravers' Gothic BT
+WritingScript:Roman
+OutlineFileName:/Users/denisemacbook/Documents/Design Work/Supersupply/Studio Amore/website/Studio_Amore_web Ordner/Document fonts/Engravers' Gothic BT.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:35944
+NameArray:0,Mac,4,Engravers' Gothic BT
+NameArray:0,Win,1,EngraversGothic BT
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:Galea-Display
+FamilyName:Galea Display
+StyleName:Regular
+MenuName:Galea Display
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Galea Display
+WritingScript:Roman
+OutlineFileName:/Users/denisemacbook/Documents/Design Work/Supersupply/Studio Amore/website/Studio_Amore_web Ordner/Document fonts/Galea Display Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:28072
+FileModTime:429811972
+NameArray:0,Mac,18,Galea Display Regular
+NameArray:0,Mac,4,Galea Display
+NameArray:0,Win,1,Galea Display
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+MenuName:Minion Pro
+StyleBits:0
+WeightClass:400
+WidthClass:5
+AngleClass:0
+FullName:Minion Pro
+WritingScript:Roman
+OutlineFileName:/Users/denisemacbook/Documents/Design Work/Supersupply/Studio Amore/website/Studio_Amore_web Ordner/Document fonts/MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:565696309
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
