@@ -61,7 +61,7 @@ const IndexPage = () => {
               { delay: 500 }
             }
           >
-
+            
             {
               Object.keys(images).map((keyName, i) => (
                 <SwiperSlide>
