@@ -20,6 +20,8 @@ const images = importAll(require.context('../assets/photos', false, /\.(png|jpe?
 
 const IndexPage = () => {
 
+  const [imprint, setImprint] = React.useState(false)
+
   React.useEffect(() => {
     const isBrowser = () => typeof window !== `undefined`
 
@@ -27,7 +29,8 @@ const IndexPage = () => {
   }, [])
 
   const scrollDown = () => {
-    window.scrollTo(0, document.body.scrollHeight);
+    setImprint(!imprint)
+    setTimeout(() => window.scrollTo(0, !imprint ? document.body.scrollHeight : 0), 100)
   }
 
   return (
@@ -61,7 +64,7 @@ const IndexPage = () => {
               { delay: 500 }
             }
           >
-            
+
             {
               Object.keys(images).map((keyName, i) => (
                 <SwiperSlide>
@@ -79,25 +82,17 @@ const IndexPage = () => {
             IMPRINT
           </p>
 
-          <div className="imprint-content">
+          <div className="imprint-content" style={{ opacity: imprint ? 1 : 0, maxHeight: imprint ? 2000 : 0}}>
             <p>
               Angaben gem. § 5 TMG
-              Supersupply Berlin Gmbh
-              Luckenwalder Strasse 6B
-              10963 Berlin
-              Germany
 
-              Mail: hi@supersupply.de
-
-              Amtsgericht Charlottenburg HRB 200823 B
-              Ust.Id: DE320400391
-              Geschäftsführer: Janusch Munkwitz
-              Supersupply Stuttgart Gmbh
+              studio amore ist eine Firmensparte der
+              SUPERSUPPLY Stuttgart GmbH
               Weberstrasse 3
               70182 Stuttgart
               Germany
 
-              Mail: hi@supersupply.de
+              Mail: info@supersupply.de
 
               Amtsgericht Stuttgart HRB 774274
               Ust.Id: DE346238175

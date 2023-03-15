@@ -110,6 +110,11 @@ p {
          cursor: pointer;
       }
    }
+
+   .imprint-content{
+      transition: all 0.5s ease;
+      overflow: hidden;
+   }
 }
 
 @media (max-width: 768px) {
@@ -124,7 +129,7 @@ p {
    }
 
    .mySwiper {
-      max-height: 80vh;
+      max-height: 60vh;
       width     : 100vw;
    }
 
@@ -163,5 +168,8 @@ p {
 
    .imprint-content{
       margin-top: 12vh;
+      width: 80vw;
+      transition: all 0.5s ease;
+      overflow: hidden;
    }
 }
