@@ -60,12 +60,6 @@ p {
    width     : 50vw;
 }
 
-// .swiper-slide {
-//    display        : flex;
-//    justify-content: center;
-//    align-items    : center;
-// }
-
 .swiper-wrapper {
    align-items: center;
    /* add this will all relevant prefixes */
@@ -144,12 +138,15 @@ p {
    }
 
    .links {
-      // display: grid;
-      // grid-template-columns: 1fr 1fr 1fr;
+      position: fixed;
+      width: calc(100vw - 2rem);
+      bottom: 1rem;
+
       display        : flex;
       justify-content: space-between;
 
       margin: 1rem 1rem;
+      // transition: all 0.5s ease;
 
       div {
          display        : flex;
@@ -171,7 +168,7 @@ p {
    }
 
    .imprint-content{
-      margin-top: 15vh;
+      margin-top: 0vh;
       width: 80vw;
       transition: all 0.5s ease;
       overflow: hidden;
