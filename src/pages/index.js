@@ -76,7 +76,7 @@ const IndexPage = () => {
         </div>
 
         {mobile && imprint &&
-          <div style={{ height: '40vh' }}></div>
+          <div style={{ height: '50vh' }}></div>
         }
       </div>
 
