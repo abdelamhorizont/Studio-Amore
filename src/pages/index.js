@@ -21,11 +21,11 @@ const images = importAll(require.context('../assets/photos', false, /\.(png|jpe?
 const IndexPage = () => {
 
   const [imprint, setImprint] = React.useState(false)
+  const [mobile, setMobile] = React.useState(false)
 
   React.useEffect(() => {
     const isBrowser = () => typeof window !== `undefined`
-
-    // window.addEventListener('resize', setMobile(isBrowser() && window.screen.width < 768))
+    window.addEventListener('resize', setMobile(isBrowser() && window.screen.width < 768))
   }, [])
 
   const scrollDown = () => {
@@ -74,6 +74,10 @@ const IndexPage = () => {
             }
           </Swiper>
         </div>
+
+        {mobile && imprint &&
+          <div style={{ height: '40vh' }}></div>
+        }
       </div>
 
       <div className="links">
@@ -82,7 +86,7 @@ const IndexPage = () => {
             IMPRINT
           </p>
 
-          <div className="imprint-content" style={{ opacity: imprint ? 1 : 0, maxHeight: imprint ? 2000 : 0}}>
+          <div className="imprint-content" style={{ opacity: imprint ? 1 : 0, maxHeight: imprint ? 2000 : 0 }}>
             <p>
               Angaben gem. § 5 TMG
 
