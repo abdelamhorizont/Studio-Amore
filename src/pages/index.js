@@ -74,10 +74,6 @@ const IndexPage = () => {
             }
           </Swiper>
         </div>
-
-        {mobile && imprint &&
-          <div style={{ height: '50vh' }}></div>
-        }
       </div>
 
       <div className="links">
@@ -85,24 +81,6 @@ const IndexPage = () => {
           <p className="imprint-title">
             IMPRINT
           </p>
-
-          <div className="imprint-content" style={{ opacity: imprint ? 1 : 0, maxHeight: imprint ? 2000 : 0 }}>
-            <p>
-              Angaben gem. § 5 TMG
-
-              studio amore ist eine Firmensparte der
-              SUPERSUPPLY Stuttgart GmbH
-              Weberstrasse 3
-              70182 Stuttgart
-              Germany
-
-              Mail: info@supersupply.de
-
-              Amtsgericht Stuttgart HRB 774274
-              Ust.Id: DE346238175
-              Geschäftsführer: Janusch Munkwitz
-            </p>
-          </div>
         </div>
 
         <div className="mail">
@@ -120,8 +98,29 @@ const IndexPage = () => {
             </p>
           </a>
         </div>
-
       </div>
+
+      {imprint &&
+        // <div style={{ height: '40vh' }}></div>
+        <div className="imprint-content" style={{ opacity: imprint ? 1 : 0, maxHeight: imprint ? 2000 : 0 }}>
+          <p>
+            Angaben gem. § 5 TMG
+
+            studio amore ist eine Firmensparte der
+            SUPERSUPPLY Stuttgart GmbH
+            Weberstrasse 3
+            70182 Stuttgart
+            Germany
+
+            Mail: info@supersupply.de
+
+            Amtsgericht Stuttgart HRB 774274
+            Ust.Id: DE346238175
+            Geschäftsführer: Janusch Munkwitz
+          </p>
+        </div>
+      }
+
     </main>
   )
 }

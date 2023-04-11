@@ -104,17 +104,24 @@ p {
          cursor: pointer;
       }
    }
+}
 
-   .imprint-content{
-      transition: all 0.5s ease;
-      overflow: hidden;
-   }
+.imprint-content{
+   position: relative;
+   transition: all 0.5s ease;
+   overflow: hidden;
+   font-family: "Engravers";
+
+   margin: 2rem;
+   margin-bottom: 4rem;
+   width: 50vw;
 }
 
 @media (max-width: 768px) {
    .grid {
       display              : grid;
       grid-template-columns: 1fr;
+      height: auto;
    }
 
    .grid-left{
@@ -141,7 +148,7 @@ p {
    .links {
       position: fixed;
       width: calc(100vw - 2rem);
-      bottom: 0rem;
+      bottom: -2rem;
 
       display        : flex;
       justify-content: space-between;
@@ -169,8 +176,9 @@ p {
    }
 
    .imprint-content{
-      margin-top: 0vh;
-      width: 80vw;
+      margin: 1rem;
+      margin-bottom: 4rem;
+      width: calc(100vw - 2rem);
       transition: all 0.5s ease;
       overflow: hidden;
    }
