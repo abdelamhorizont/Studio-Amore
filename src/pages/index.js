@@ -106,9 +106,9 @@ const IndexPage = () => {
         </div>
 
         <div className="mail">
-          <a href="mailto:info@studioamore.de">
+          <a href="mailto:info@studio-amore.de ">
             <p>
-              INFO@STUDIOAMORE.DE
+              INFO@STUDIO-AMORE.DE
             </p>
           </a>
         </div>
